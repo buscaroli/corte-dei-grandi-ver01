@@ -2,14 +2,21 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    font-size: 20px;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
-    text-align: center;
+}
+
+#text {
+    padding-left: 20%;
+    font-size: max(3vw);
 }
 
 #cursive {
     font-family: 'Great Vibes', cursive;
-    font-size: 1.2em;
+    font-size: 1.5rem;
     font-weight: bold;
+}
+
+.fab {
+    font-size: 2rem;
 }
