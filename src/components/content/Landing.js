@@ -3,8 +3,12 @@ import React from 'react'
 
 const Landing = () => {
     return(
-        <div>
-            Landing
+        <div className="ui container">
+            <div>img</div>
+            <div>
+                <div>Left</div>
+                <div>Right</div>
+            </div>
         </div>
     )    
 }

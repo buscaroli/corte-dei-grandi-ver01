@@ -1,10 +1,11 @@
 #title {
-    font-size: 9vw;
+    font-size: max(8vw);
     font-family: 'Great Vibes', cursive;
-    padding-top: 40px;
+    padding-top: 10%;
+    
 }
 
 #logo {
-    min-height: 100px;
-    min-width: 100px;
+    min-height: 50px;
+    min-width: 50px;
 }

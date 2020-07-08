@@ -6,7 +6,7 @@ import '../styles/banner.css'
 
 const Banner = () => {
     return(
-        <div className="ui container grid">
+        <div id="banner" className="ui container grid">
             <div className="ui four wide column">
                 <img id="logo" class="ui small image" src={logo} alt="logo"/>
             </div>
