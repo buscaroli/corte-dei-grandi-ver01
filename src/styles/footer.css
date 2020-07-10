@@ -7,13 +7,13 @@
 }
 
 #text {
-    padding-left: 20%;
-    font-size: max(3vw);
+    padding-left: 25%;
+    font-size: max(2vw);
 }
 
 #cursive {
     font-family: 'Great Vibes', cursive;
-    font-size: 1.5rem;
+    font-size: max(3vw);
     font-weight: bold;
 }
 
