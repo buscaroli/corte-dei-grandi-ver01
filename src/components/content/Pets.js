@@ -1,13 +1,19 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import '../../styles/pets.css'
 
-// TODO IMPLEMENT STATE WITH REACT-REDUX IN APP.JS
-const Pets = (frames) => {
+
+class Pets extends React.Component {
     
-    const renderFrames = (frames) => {
-        console.log(frames)
-        frames.map((frame) => {
+    componentDidMount() {
+        console.log('Pets is mounted.')
+        console.log(this.props.petsList)
+    }
+
+    renderListOfPets() {
+        return this.props.petsList.map(frame => {
             return (
-                <div className="ui card">
+                <div className="ui card" key={frame.pic}>
                     <div className="image">
                         <img src={frame.pic} alt="" />
                     </div>
@@ -21,12 +27,24 @@ const Pets = (frames) => {
         }) 
     }
     
-    return(
-        <div className="ui container">
-            <h1>I nostri Cuccioli</h1>
-            {renderFrames}
-        </div>
-    )    
+    render() {
+        return (
+            <div id="main" className="ui container">
+                <h1 id="header-title">I nostri Cuccioli</h1>
+                <div className="ui cards">
+                    {this.renderListOfPets(this.props.petsList)}
+                </div>
+                
+            </div>
+        )    
+    }
+    
 }
 
-export default Pets
+const mapStateToProps = state => {
+    return {
+        petsList: state.pets
+    }
+}
+
+export default connect(mapStateToProps)(Pets)
