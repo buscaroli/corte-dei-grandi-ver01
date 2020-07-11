@@ -5,9 +5,9 @@ import '../../styles/contacts.css'
 const Contacts = () => {
     return (
         <div id="main-contacts">
-            <h1>Contattaci</h1>
+            <h1 id="header-title">Contattaci</h1>
             <h3>Compila la scheda con i tuoi dettagli e ti contatteremo al piu' presto con il metodo da te preferito.</h3>
-            <div className="ui large form container">
+            <div id="form" className="ui large form container">
                 <div className="fields">
                     <div className="six wide field">
                         <label>Nome</label>

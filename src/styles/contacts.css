@@ -7,3 +7,12 @@
     margin-bottom: 60px;
 }
 
+#header-title {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: calc(1.2em + 2vmin)
+}
+
+#form {
+    padding-left: 15%;
+}
